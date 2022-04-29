@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.04bc81e5.css",
+    "main.js": "/static/js/main.adc0e687.js",
+    "static/js/845.b7c246b3.chunk.js": "/static/js/845.b7c246b3.chunk.js",
+    "static/media/collision.wav": "/static/media/collision.03ee3acc87b2c1bf83e9.wav",
+    "static/media/avalanche-avax-logo.svg": "/static/media/avalanche-avax-logo.539c0e62fec06a8696abab030b937495.svg",
+    "index.html": "/index.html",
+    "main.04bc81e5.css.map": "/static/css/main.04bc81e5.css.map",
+    "main.adc0e687.js.map": "/static/js/main.adc0e687.js.map",
+    "845.b7c246b3.chunk.js.map": "/static/js/845.b7c246b3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.04bc81e5.css",
+    "static/js/main.adc0e687.js"
+  ]
+}
