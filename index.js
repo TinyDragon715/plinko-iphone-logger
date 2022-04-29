@@ -59,7 +59,7 @@ app.post('/api', (req, res) => {
 });
 
 app.get("*", (req, res) => {
-  res.sendFile('./public/index.html');
+  res.sendFile(__dirname + '/public/index.html');
 });
 
 // starting the server
