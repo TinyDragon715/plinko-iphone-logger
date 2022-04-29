@@ -35,8 +35,10 @@ app.use(cors());
 // adding morgan to log HTTP requests
 app.use(morgan('combined'));
 
+app.use(express.static('public'));
+
 // defining an endpoint to return all ads
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
   console.log("Get request here");
   res.json({
       success: true,
@@ -44,7 +46,7 @@ app.get('/', (req, res) => {
   })
 });
 
-app.post('/', (req, res) => {
+app.post('/api', (req, res) => {
   const {cnt1, cnt2, row, index, title} = req.body;
   console.log('cnt1 ---->', cnt1);
   console.log('cnt2 ---->', cnt2);
@@ -54,6 +56,10 @@ app.post('/', (req, res) => {
   res.json({
       success: true,
   });
+});
+
+app.get("*", (req, res) => {
+  res.sendFile('./public/index.html');
 });
 
 // starting the server
